@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Apple Tunes</string>
+    <string name="trackName">Billie Jean</string>
+    <string name="artwork">Artwork</string>
+    <string name="artistName">Michael Jackson</string>
+    <string name="trackTimeMillis">03:45</string>
+    <string name="view_details">View Details</string>
+    <string name="timeIcon">timeIcon</string>
+    <string name="artistNameLabel">Artist Name:</string>
+    <string name="collectionNameLabel">Collection Name:</string>
+    <string name="collectionName">The Ultimate Collection</string>
+    <string name="collectionCensoredNameLabel">Collection Censored Name:</string>
+    <string name="collectionCensoredName">The Essential Michael Jackson</string>
+    <string name="releaseDateLabel">Release Date:</string>
+    <string name="releaseDate">1982-11-30</string>
+    <string name="trackPriceLabel">Track Price:</string>
+    <string name="trackPrice">1.49</string>
+    <string name="currency">USD</string>
+    <string name="collectionPriceLabel">Collection Price:</string>
+    <string name="collectionPrice">16.9</string>
+    <string name="countryLabel">Country:</string>
+    <string name="country">USA</string>
+    <string name="primaryGenreNameLabel">Genre:</string>
+    <string name="primaryGenreName">Pop</string>
+    <string name="isStreamAbleLabel">Is StreamAble:</string>
+    <string name="isStreamAbleYes">Yes</string>
+    <string name="isStreamAbleNo">No</string>
+</resources>

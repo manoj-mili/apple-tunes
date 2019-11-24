@@ -30,4 +30,8 @@ As the app is quite small 2 fragments List view and Detail View Dependency Injec
  
 <image src = https://lh3.googleusercontent.com/-PSFazXfkZLc/XdruHXE6A7I/AAAAAAAAHyM/wBjFfPBscCwqmraUpmpUnJyzZh9W0qkZwCK8BGAsYHg/s0/2019-11-24.jpg height=800 width=400>
  </p>
+ 
+## Apache
+Apache 2.0 License
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 

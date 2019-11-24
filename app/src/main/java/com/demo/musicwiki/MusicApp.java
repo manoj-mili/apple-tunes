@@ -36,6 +36,11 @@ public class MusicApp extends Application implements Application.ActivityLifecyc
     }
 
     @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(LocaleManager.setLocale(base));
+    }
+
+    @Override
     public void onActivityCreated(@NonNull Activity activity, @Nullable Bundle bundle) {
 
     }

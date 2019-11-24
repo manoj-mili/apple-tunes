@@ -6,16 +6,20 @@ import android.content.res.Resources;
 
 import java.util.Locale;
 
+import timber.log.Timber;
+
 import static com.demo.musicwiki.utils.Constants.ENGLISH;
 import static com.demo.musicwiki.utils.Constants.KEY_PREFERRED_LANGUAGE;
 
 public class LocaleManager {
 
     public static Context setLocale(Context context) {
+        Timber.d("Current Language is %s",getLanguage(context));
         return updateResources(context, getLanguage(context));
     }
 
     public static void setNewLocale(Context c, String language) {
+        Timber.d("New Locale is %s",language);
         persistLanguage(c, language);
         updateResources(c, language);
     }
@@ -35,7 +39,7 @@ public class LocaleManager {
         Resources res = context.getResources();
         Configuration config = new Configuration(res.getConfiguration());
         config.setLocale(locale);
-        res.updateConfiguration(config, res.getDisplayMetrics());
+        context = context.createConfigurationContext(config);
         return context;
     }
 }

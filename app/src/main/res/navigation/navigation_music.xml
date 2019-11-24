@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_music"
+    app:startDestination="@+id/listView">
+
+    <fragment
+        android:id="@+id/listView"
+        android:name="com.demo.musicwiki.music.musiclist.MusicListView"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_list_view">
+        <action
+            android:id="@+id/action_listView_to_detailView"
+            app:destination="@+id/detailView"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:launchSingleTop="false"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailView"
+        android:name="com.demo.musicwiki.music.musicdetail.MusicDetailView"
+        android:label="{title}"
+        tools:layout="@layout/fragment_detail_view">
+        <argument
+            android:name="trackId"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+</navigation>

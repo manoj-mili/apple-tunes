@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="music"
+            type="com.demo.musicwiki.data.entities.Music" />
+
+        <variable
+            name="listener"
+            type="com.demo.musicwiki.music.musiclist.MusicAdapterClickListener" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:onClick="@{() -> listener.onMusicItemClicked(music.trackId, music.trackName)}"
+        android:elevation="@dimen/_4sdp">
+        <ImageView
+            android:id="@+id/iv_artwork"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:contentDescription="@string/artwork"
+            android:padding="@dimen/_4sdp"
+            android:src="@{music.artworkUrl100}"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_track_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="@dimen/_2sdp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_14ssp"
+                tools:text="@{music.trackName}" />
+
+            <TextView
+                android:id="@+id/tv_artist_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                android:fontFamily="sans-serif"
+                android:text="@{music.artistName}"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_12ssp" />
+
+
+            <TextView
+                android:id="@+id/tv_track_millis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                android:drawableStart="@drawable/ic_watch_later"
+                android:drawablePadding="@dimen/_8sdp"
+                />
+
+            <TextView
+                android:id="@+id/tv_view_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_view_details"
+                android:textColor="@color/colorAccent"
+                android:onClick="@{() -> listener.onMusicItemClicked(music.trackId, music.trackName)}"
+                android:textSize="@dimen/_12ssp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

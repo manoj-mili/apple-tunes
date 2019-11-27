@@ -1,4 +1,4 @@
-## Apple Tunes is a simple App explaining working of Android Architecture Components, MVVM Pattern, Databinding, Retrofit, Simple Dependency Injection without Dagger and Android Localization **
+## Apple Tunes is a simple App explaining working of Android Architecture Components, MVVM Pattern, Databinding, Retrofit, Simple Dependency Injection without Dagger and Android Localization
 
 Uses Retrofit library for pulling data from a server and persist data in DB.
 Uses Navigation Component with Single Activity

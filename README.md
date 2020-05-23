@@ -12,8 +12,6 @@ As the app is quite small 2 fragments List view and Detail View Dependency Injec
 - Retrofit
 - Room for data caching
 - Repository pattern
-
-<image src = https://cdn.androidwave.com/wp-content/uploads/2019/05/mvvm-architecture-app-in-android.png height=400 width=400> 
   
  ## List View  &  Detail View
 
